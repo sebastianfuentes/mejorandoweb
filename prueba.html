@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Calculadora con Servlets</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+    <body>
+    	<div class="todo">
+    	<header>
+        <h1>Calculadora JSP y Servlet</h1>
+        <p><span>Sebastian Fuentes Mancilla - 5IM8</span></p>
+        </header>
+        <div id='container'>
+        <form name="calcular" action="logica" method="post">
+        <input type="text" name = "primero" size="20" placeholder="Primer número...que exista" /> 
+        <select name="signo">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">÷</option>
+        </select>
+
+        <input type="text" name="segundo" size="20" placeholder="Segundo número" />
+        <input type="submit" value="Calcular" name="Calcular" onclick="return validar(primero, segundo, signo);"data-loading-text="Calculando..."/
+        </form>    
+        </div>
+        <div id='resultado'>
+        	<p>Operacion</p>
+        	<p>Resultado</p>
+        	<p>Limpiar</p>
+        </div>
+    </div>
+</body>
+</html>
